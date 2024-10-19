@@ -1,0 +1,119 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding-top: 40px; /* Adds space above the image */
+    overflow: hidden;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 400px;
+    height: 200px;
+    animation: logoSlideIn 2s ease forwards;
+}
+
+/* Main container */
+.recent-courses {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease;
+    max-width: 400px; 
+    width: 100%; /* Take full width for small devices */
+}
+
+/* Dropdown styling */
+select.ui.dropdown {
+    width: 100%; /* Make dropdown take full width on smaller screens */
+    max-width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #007BFF;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+    margin: 0 auto; /* Center the dropdown */
+}
+
+select.ui.dropdown:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 20px auto 0 auto;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Fade-in animation for the dropdown box */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) { /* Tablets */
+    .recent-courses {
+        max-width: 90%; /* Reduce width for tablets */
+        padding: 15px;
+    }
+
+    img {
+        width: 300px; /* Adjust image size for tablets */
+    }
+
+    button {
+        width: 80%; /* Full-width button on smaller screens */
+    }
+}
+
+@media (max-width: 480px) { /* Mobile devices */
+    .recent-courses {
+        max-width: 100%; /* Full width on mobile */
+        padding: 10px;
+    }
+
+    img {
+        width: 250px; /* Adjust image size for mobile */
+    }
+
+    button {
+        width: 100%; /* Full-width button on mobile */
+        padding: 12px;
+    }
+}

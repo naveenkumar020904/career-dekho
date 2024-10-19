@@ -1,0 +1,203 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.logo {
+    width: 400px;
+    height: 200px;
+    top: 20px;
+    left: 20px;
+    animation: logoSlideIn 2s ease forwards;
+}
+
+.home-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.home-button:hover {
+    background-color: #45a049;
+}
+
+.heading {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    width: 90%;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.details-button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #fc4828;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.details-button:hover {
+    background-color: #45a049;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Table styles within modal */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.rating {
+    font-size: 1.2em;
+    color: gold;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) { /* Tablet view */
+    .logo {
+        width: 120px;
+    }
+
+    .home-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr); /* Adjust to 2 columns for tablets */
+    }
+
+    .modal-content {
+        width: 90%; /* Slightly smaller for tablets */
+    }
+}
+
+@media (max-width: 480px) { /* Mobile view */
+    .logo {
+        width: 100px;
+        top: 10px;
+        left: 10px;
+    }
+
+    .home-button {
+        font-size: 12px;
+        padding: 6px 12px;
+        top: 10px;
+        right: 10px;
+    }
+
+    .heading {
+        margin-top: 40px; /* Adjusted for smaller screens */
+    }
+
+    .card-container {
+        grid-template-columns: 1fr; /* Single column on mobile */
+        gap: 10px;
+    }
+
+    .card {
+        padding: 8px;
+    }
+
+    .modal-content {
+        width: 95%; /* Make modal take more width on mobile */
+    }
+
+    .details-button {
+        padding: 6px 12px;
+    }
+}

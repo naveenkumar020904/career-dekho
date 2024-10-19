@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="10styles.css">
+    <title>Career Dekho - After 10th</title>
+</head>
+<body>
+    <!-- Logo Section -->
+    <img src="./career_dheko_logo.png" alt="Career Dekho Logo" class="logo">
+    <!-- Home Button -->
+    <a href="index.html" class="home-button">Home</a>
+
+    <div class="heading">
+        <h1>After 10th, these are the courses available!</h1>
+        <h2>You can go with:</h2>
+    </div>
+
+    <!-- Card Container -->
+    <div class="card-container">
+        <!-- Course Card 1 -->
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcxTMbLcW4wgcQYXWRZMUYbbYmwryClkK_kQ&s" alt="Intermediate" class="card-image">
+            <h3>Intermediate (12th Grade)</h3>
+            <div class="rating">★★★★☆</div>
+            <button class="details-button" data-course="Intermediate">View Details</button>
+        </div>
+        <!-- Course Card 2 -->
+        <div class="card">
+            <img src="https://d8zm9ei35njj5.cloudfront.net/wp-content/uploads/2022/02/polytechnic.webp" alt="Polytechnic" class="card-image">
+            <h3>Polytechnic Courses</h3>
+            <div class="rating">★★★★☆</div>
+            <button class="details-button" data-course="Polytechnic">View Details</button>
+        </div>
+        <!-- Course Card 3 -->
+        <div class="card">
+            <img src="./diploma_engi.jpg" alt="Diploma in Engineering" class="card-image">
+            <h3>Diploma in Engineering</h3>
+            <div class="rating">★★★★☆</div>
+            <button class="details-button" data-course="Diploma in Engineering">View Details</button>
+        </div>
+        <!-- Course Card 4 -->
+        <div class="card">
+            <img src="https://mindlercareerlibrarynew.imgix.net/24A-Hotel_Management.png" alt="Diploma in Hotel Management" class="card-image">
+            <h3>Diploma in Hotel Management</h3>
+            <div class="rating">★★★★☆</div>
+            <button class="details-button" data-course="Diploma in Hotel Management">View Details</button>
+        </div>
+        <!-- Course Card 5 -->
+        <div class="card">
+            <img src="https://thumbs.dreamstime.com/b/animated-young-boy-glasses-working-desktop-computer-against-blue-background-d-cartoon-character-focused-learning-319095157.jpg" alt="Diploma in Animation" class="card-image">
+            <h3>Diploma in Animation</h3>
+            <div class="rating">★★★★☆</div>
+            <button class="details-button" data-course="Diploma in Animation">View Details</button>
+        </div>
+        <!-- Course Card 6 -->
+        <div class="card">
+            <img src="https://www.galaxyeduworld.com/storage/blogs/5eecbd48c25aa_750_351.jpg" alt="Diploma in Pharmacy" class="card-image">
+            <h3>Diploma in Pharmacy (D.Pharm)</h3>
+            <div class="rating">★★★★☆</div>
+            <button class="details-button" data-course="Diploma in Pharmacy">View Details</button>
+        </div>
+        <!-- Course Card 7 -->
+        <div class="card">
+            <img src="https://mumbai.dvet.gov.in/wp-content/uploads/sites/4/2021/06/LOBO.jpg" alt="ITI Courses" class="card-image">
+            <h3>ITI Courses</h3>
+            <div class="rating">★★★★☆</div>
+            <button class="details-button" data-course="ITI">View Details</button>
+        </div>
+        <!-- Course Card 8 -->
+        <div class="card">
+            <img src="https://media.istockphoto.com/id/1344960215/vector/vocational-education-abstract-concept-vector-illustration.jpg?s=612x612&w=0&k=20&c=XVylx1wzZkOO38bmUQlpLbzwQw0uO2de-fdYDTKfggY=" alt="Vocational Courses" class="card-image">
+            <h3>Vocational Courses</h3>
+            <div class="rating">★★★★☆</div>
+            <button class="details-button" data-course="Vocational">View Details</button>
+        </div>
+    </div>
+
+    <!-- Modal for Course Details -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modal-course-title">Course Details</h2>
+            <table id="course-details-table">
+                <thead>
+                    <tr>
+                        <th>Detail</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Description</td>
+                        <td id="description"></td>
+                    </tr>
+                    <tr>
+                        <td>Duration</td>
+                        <td id="duration"></td>
+                    </tr>
+                    <tr>
+                        <td>Sub Courses</td>
+                        <td id="sub-courses"></td>
+                    </tr>
+                    <tr>
+                        <td>Course Entrance Exams</td>
+                        <td id="entrance-exams"></td>
+                    </tr>
+                    <tr>
+                        <td>Rating</td>
+                        <td id="rating"></td>
+                    </tr>
+                    <tr>
+                        <td>Jobs</td>
+                        <td id="jobs"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Link to external JS file -->
+    <script src="after10th.js"></script>
+</body>
+</html>

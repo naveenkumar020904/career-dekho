@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inter.css">
+    <title>Career Dekho - After 12th</title>
+</head>
+<body>
+    <!-- Logo Section -->
+    <img src="./career_dheko_logo.png" alt="Career Dekho Logo" class="logo">
+    <!-- Home Button -->
+    <a href="index.html" class="home-button">Home</a>
+
+    <div class="heading">
+        <h1>After 12th, these are the courses available!</h1>
+        <h2>You can go with:</h2>
+    </div>
+
+    <!-- Card Container -->
+    <div class="card-container">
+        <!-- Course Card 1 -->
+        <div class="card">
+            <img src="https://srmap.edu.in/wp-content/uploads/2023/10/cse-blog.jpg" alt="Science Stream" class="card-image">
+            <h3>Science Stream</h3>
+            <div class="rating">★★★★☆</div>
+            <button class="details-button" data-course="Science">View Details</button>
+        </div>
+        <!-- Course Card 2 -->
+        <div class="card">
+            <img src="https://cdn1.byjus.com/wp-content/uploads/2022/09/Commerce.webp" alt="Commerce Stream" class="card-image">
+            <h3>Commerce Stream</h3>
+            <div class="rating">★★★★☆</div>
+            <button class="details-button" data-course="Commerce">View Details</button>
+        </div>
+        <!-- Course Card 3 -->
+        <div class="card">
+            <img src="https://learn.lankaacademy.lk/pluginfile.php/733/coursecat/description/21.jpg" alt="Arts Stream" class="card-image">
+            <h3>Arts Stream</h3>
+            <div class="rating">★★★★☆</div>
+            <button class="details-button" data-course="Arts">View Details</button>
+        </div>
+    </div>
+
+    <!-- Modal for Course Details -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modal-course-title">Course Details</h2>
+            <table id="course-details-table">
+                <thead>
+                    <tr>
+                        <th>Detail</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Description</td>
+                        <td id="description"></td>
+                    </tr>
+                    <tr>
+                        <td>Duration</td>
+                        <td id="duration"></td>
+                    </tr>
+                    <tr>
+                        <td>Sub Courses</td>
+                        <td id="sub-courses"></td>
+                    </tr>
+                    <tr>
+                        <td>Course Entrance Exams</td>
+                        <td id="entrance-exams"></td>
+                    </tr>
+                    <tr>
+                        <td>Rating</td>
+                        <td id="rating"></td>
+                    </tr>
+                    <tr>
+                        <td>Jobs</td>
+                        <td id="jobs"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Link to external JS file -->
+    <script src="inter.js"></script>
+</body>
+</html>
